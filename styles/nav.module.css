@@ -1,0 +1,96 @@
+/* Hamburger button */
+
+.burger {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.bline1_closed,
+.bline1_open,
+.bline2_closed,
+.bline2_open,
+.bline3_closed,
+.bline3_open {
+    width: 1.5rem;
+    height: .2rem;
+    border-radius: 5px;
+    background: black;
+    transform-origin: 1px;
+    position: relative;
+    transition: opacity 500ms, transform 500ms ease-in-out;
+}
+
+.bline1_open {
+    transform: rotate(45deg);
+}
+.bline3_open {
+    transform: rotate(-45deg);
+}
+.bline1_closed, .bline3_closed {
+    transform: rotate(0);
+}
+.bline2_open {
+    opacity: 0;
+}
+.bline2_closed {
+    opacity: 1;
+}
+
+
+/* Menu */
+
+.nav_closed,
+.nav_open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background: lightgray;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    transition: transform 500ms ease-in-out;
+}
+.nav_closed {
+    transform: translateX(100%);
+}
+.nav_open {
+    transform: translateX(0);
+}
+#nav ul {
+    list-style-type: none;
+}
+#nav li {
+    margin-top: 2rem;
+}
+#nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    transition: color 400ms;
+}
+#nav a:hover {
+    color: gray;
+}
+#nav .icon {
+    fill: black;
+    transform: scale(1.5);
+}
+.icon:hover {
+    fill: gray;
+    transition: fill 400ms;
+}
