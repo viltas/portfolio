@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { useState } from 'react'
 import styles from "../styles/nav.module.css"
-
+import Svg from 'react-inlinesvg';
 
 export default function Navigation() {
     const [nav, showNav] = useState(false);
@@ -18,8 +18,8 @@ export default function Navigation() {
                 <ul className={styles.navlist} >
                     <li><Link href="/" onClick={() => showNav(!nav)}>home</Link></li>
                     <li><Link href="/bio" onClick={() => showNav(!nav)}>bio</Link></li>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/ville-tas/" onClick={() => showNav(!nav)}><img className={styles.navicon} src="/linkedin.svg" alt="Linkedin" /></a></li>
-                    <li><a target="_blank" href="https://github.com/viltas/" onClick={() => showNav(!nav)}><img className={styles.navicon} src="/github.svg" alt="Github" /></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/ville-tas/" onClick={() => showNav(!nav)}><Svg src="/linkedin.svg" className={styles.navicon}/></a></li>
+                    <li><a target="_blank" href="https://github.com/viltas/" onClick={() => showNav(!nav)}><Svg src="/github.svg" className={styles.navicon}/></a></li>
                 </ul>
             </nav>
         </div>
