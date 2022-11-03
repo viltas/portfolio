@@ -1,4 +1,4 @@
-#header {
+.header {
   max-width: 100vh;
   font-family: "Trispace";
   font-size: 5vh;
@@ -10,7 +10,7 @@
   text-align: center;
 }
 
-#header, .name {
+.header, .name {
   font-family: "Trispace";
 }
 
