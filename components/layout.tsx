@@ -1,14 +1,19 @@
 import Navigation from './navigation'
+import { ReactNode } from 'react';
 
-export default function Layout({ children }) {
+interface Props {
+    children?: ReactNode
+}
+
+export default function Layout({ children, ...props }: Props) {
     return (
         <>
             <div className="layout">
                 <div className="site">
                     <Navigation />
-                    <div className="content">
+                    <main className="content"{...props}>
                         {children}
-                    </div>
+                    </main>
                     <footer>© 2022 Ville Taskinen</footer>
                 </div>
             </div>
