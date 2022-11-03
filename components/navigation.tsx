@@ -1,8 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 import { useState } from 'react'
-import linkedin from '../svg-icons/linkedin.svg'
-import github from '../svg-icons/github.svg'
 import styles from "../styles/nav.module.css"
 
 
