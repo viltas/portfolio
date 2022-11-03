@@ -16,10 +16,10 @@ export default function Navigation() {
             </div>
             <nav className={(!nav ? styles.nav_closed : styles.nav_open)}>
                 <ul className={styles.navlist} >
-                    <li className={styles.navitem}><Link className={styles.navlink} href="/" onClick={() => showNav(!nav)}>home</Link></li>
-                    <li className={styles.navitem}><Link className={styles.navlink} href="/bio" onClick={() => showNav(!nav)}>bio</Link></li>
-                    <li className={styles.navitem}><a href="https://www.linkedin.com/in/ville-tas/" onClick={() => showNav(!nav)}><img className={styles.navicon} src="/linkedin.svg" alt="Linkedin" /></a></li>
-                    <li className={styles.navitem}><a href="https://github.com/viltas/" onClick={() => showNav(!nav)}><img className={styles.navicon} src="/github.svg" alt="Github" /></a></li>
+                    <li><Link href="/" onClick={() => showNav(!nav)}>home</Link></li>
+                    <li><Link href="/bio" onClick={() => showNav(!nav)}>bio</Link></li>
+                    <li><a href="https://www.linkedin.com/in/ville-tas/" onClick={() => showNav(!nav)}><img className={styles.navicon} src="/linkedin.svg" alt="Linkedin" /></a></li>
+                    <li><a href="https://github.com/viltas/" onClick={() => showNav(!nav)}><img className={styles.navicon} src="/github.svg" alt="Github" /></a></li>
                 </ul>
             </nav>
         </div>
