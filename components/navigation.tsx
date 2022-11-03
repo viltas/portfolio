@@ -18,8 +18,8 @@ export default function Navigation() {
                 <ul className={styles.navlist} >
                     <li><Link href="/" onClick={() => showNav(!nav)}>home</Link></li>
                     <li><Link href="/bio" onClick={() => showNav(!nav)}>bio</Link></li>
-                    <li><a href="https://www.linkedin.com/in/ville-tas/" onClick={() => showNav(!nav)}><img className={styles.navicon} src="/linkedin.svg" alt="Linkedin" /></a></li>
-                    <li><a href="https://github.com/viltas/" onClick={() => showNav(!nav)}><img className={styles.navicon} src="/github.svg" alt="Github" /></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/ville-tas/" onClick={() => showNav(!nav)}><img className={styles.navicon} src="/linkedin.svg" alt="Linkedin" /></a></li>
+                    <li><a target="_blank" href="https://github.com/viltas/" onClick={() => showNav(!nav)}><img className={styles.navicon} src="/github.svg" alt="Github" /></a></li>
                 </ul>
             </nav>
         </div>
