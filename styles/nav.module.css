@@ -7,8 +7,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     background: transparent;
     border: none;
     cursor: pointer;
@@ -21,20 +21,20 @@
 .bline2_open,
 .bline3_closed,
 .bline3_open {
-    width: 1.5rem;
-    height: .2rem;
-    border-radius: 5px;
-    background: black;
+    width: 2rem;
+    height: .3rem;
+    border-radius: 1px;
+    background: #697A21;
     transform-origin: 1px;
     position: relative;
-    transition: opacity 500ms, transform 500ms ease-in-out;
+    transition: opacity 700ms, transform 500ms ease-in-out;
 }
 
 .bline1_open {
-    transform: rotate(45deg);
+    transform: rotate(405deg) 
 }
 .bline3_open {
-    transform: rotate(-45deg);
+    transform: rotate(315deg)
 }
 .bline1_closed, .bline3_closed {
     transform: rotate(0);
@@ -57,7 +57,7 @@
     text-align: center;
     height: 100%;
     width: 100%;
-    background: lightgray;
+    background: #F9F9F9;
     position: absolute;
     top: 0;
     right: 0;
@@ -85,13 +85,5 @@
     transition: color 400ms;
 }
 .navlist a:hover {
-    color: gray;
-}
-.navicon {
-    fill: black;
-    transform: scale(1.5);
-}
-.navicon:hover {
-    fill: gray;
-    transition: fill 400ms;
+    color: #697A21;
 }

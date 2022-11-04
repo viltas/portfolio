@@ -1,6 +1,5 @@
 .header {
   max-width: 100vh;
-  font-family: "Trispace";
   font-size: 5vh;
   font-weight: 400;
   margin-bottom: 10vh;
@@ -11,11 +10,11 @@
 }
 
 .header, .name {
-  font-family: "Trispace";
+/*  font-family: 'Rubik Mono One', sans-serif; */
 }
 
 .name {
-  color: olive;
+  color: #697A21;
 }
 
 .projects {
