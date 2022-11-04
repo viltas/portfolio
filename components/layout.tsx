@@ -18,9 +18,9 @@ export default function Layout({ children, ...props }: Props) {
                             animate={{ opacity: 1, x: 0 }}
                             transition={{
                                 type: "spring",
-                                mass: 0.35,
-                                stiffness: 75,
-                                duration: 0.3}}>
+                                mass: 0.70,
+                                stiffness: 50,
+                                duration: 0.7}}>
                             {children}
                         </motion.main>
                     </main>
