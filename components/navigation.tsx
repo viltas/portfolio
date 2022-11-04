@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { useState } from 'react'
 import styles from "../styles/nav.module.css"
-import Svg from 'react-inlinesvg';
+/*import Svg from 'react-inlinesvg';*/
 
 export default function Navigation() {
     const [nav, showNav] = useState(false);
@@ -17,11 +17,19 @@ export default function Navigation() {
             <nav className={(!nav ? styles.nav_closed : styles.nav_open)}>
                 <ul className={styles.navlist} >
                     <li><Link href="/" onClick={() => showNav(!nav)}>home</Link></li>
-                    <li><Link href="/bio" onClick={() => showNav(!nav)}>bio</Link></li>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/ville-tas/" onClick={() => showNav(!nav)}><Svg src="/linkedin.svg" className={styles.navicon}/></a></li>
-                    <li><a target="_blank" href="https://github.com/viltas/" onClick={() => showNav(!nav)}><Svg src="/github.svg" className={styles.navicon}/></a></li>
+                    <li><Link href="/about" onClick={() => showNav(!nav)}>about</Link></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/ville-tas/" onClick={() => showNav(!nav)}>linkedin</a></li>
+                    <li><a target="_blank" href="https://github.com/viltas/" onClick={() => showNav(!nav)}>github</a></li>
                 </ul>
             </nav>
         </div>
     )
 }
+
+
+/*
+
+<li><a target="_blank" href="https://www.linkedin.com/in/ville-tas/" onClick={() => showNav(!nav)}><Svg src="/linkedin.svg" className={styles.navicon}/></a></li>
+<li><a target="_blank" href="https://github.com/viltas/" onClick={() => showNav(!nav)}><Svg src="/github.svg" className={styles.navicon}/></a></li>
+
+*/

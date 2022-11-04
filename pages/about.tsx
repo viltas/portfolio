@@ -1,7 +1,7 @@
-import styles from '../styles/bio.module.css'
+import styles from '../styles/about.module.css'
 import Layout from '../components/layout'
 
-export default function Bio() {
+export default function About() {
     return (
         <Layout>
             <div>
