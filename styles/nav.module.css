@@ -53,10 +53,9 @@
 .nav_open {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: lightgray;
     position: absolute;
@@ -73,6 +72,8 @@
 }
 .navlist {
     list-style-type: none;
+    position: fixed;
+    top: 20vh;
 }
 .navlist li {
     margin-top: 2rem;
