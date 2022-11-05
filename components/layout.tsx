@@ -10,8 +10,8 @@ export default function Layout({ children, ...props }: Props) {
     return (
         <>
             <div className="layout">
+            <div className="topbar"><Navigation /></div>
                 <div className="site">
-                    <Navigation />
                     <main className="content"{...props}>
                         <motion.main
                             initial={{ opacity: 0, x: -200 }}
@@ -20,7 +20,8 @@ export default function Layout({ children, ...props }: Props) {
                                 type: "spring",
                                 mass: 0.70,
                                 stiffness: 50,
-                                duration: 0.7}}>
+                                duration: 0.7
+                            }}>
                             {children}
                         </motion.main>
                     </main>

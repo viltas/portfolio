@@ -9,12 +9,9 @@ export default function Home() {
       </header>
       <div className={styles.subtitle}>
         <h2>Projects</h2>
-      </div>
+        </div>
       <section className={styles.projects}>
 
-        <div className={styles.project} />
-        <div className={styles.project} />
-        <div className={styles.project} />
         <div className={styles.project} />
       </section>
     </Layout>

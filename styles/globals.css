@@ -5,7 +5,7 @@
     padding: 0;
     text-decoration: none;
     font-family: 'Noto Sans Mono';
-    color: #212121;
+    color: #495057;
 }
 
 html, body {
@@ -30,8 +30,6 @@ p {
 .layout {
     max-width: 100%;
     margin: 0 auto;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 .site {
     display: flex;
@@ -40,12 +38,24 @@ p {
     align-items: center;
 }
 
+.topbar {
+    position: fixed;
+    display: flex;
+    min-width: 100%;
+    height: 3rem;
+    background-color: #F9F9F9;
+    align-items: center;
+    justify-content: flex-end;
+    /*box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;*/
+    z-index: 70;
+}
+
 .content {
     flex-grow: 1;
 }
 footer {
     text-align: center;
-    color: #697A21;
+    color: #333533;
     margin: 20px auto;
     
 }
