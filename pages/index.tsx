@@ -4,12 +4,19 @@ import Layout from '../components/layout'
 export default function Home() {
   return (
     <Layout>
-    <header className={styles.header}>        
+      <header className={styles.header}>
         <span className={styles.name}>Ville Taskinen</span> is a cognitive science master's student focusing on user experience and UI design.
-    </header>
-    <section className={styles.projects}>
+      </header>
+      <div className={styles.subtitle}>
         <h2>Projects</h2>
-    </section>
-  </Layout> 
+      </div>
+      <section className={styles.projects}>
+
+        <div className={styles.project} />
+        <div className={styles.project} />
+        <div className={styles.project} />
+        <div className={styles.project} />
+      </section>
+    </Layout>
   )
 }
