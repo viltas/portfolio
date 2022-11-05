@@ -30,8 +30,8 @@ p {
 .layout {
     max-width: 100%;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .site {
     display: flex;
